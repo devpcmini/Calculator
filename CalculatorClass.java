@@ -121,18 +121,18 @@ public class CalculatorClass extends JFrame {
                 if (info.getText() == "") {
                     result = (double)Math.round(Math.pow(num, 2.0D) * 1.0E9D) / 1.0E9D;
                     if (result % 1.0D == 0.0D) {
-                        info.setText((int)num + "의 제곱 ㅋㅋ");
+                        info.setText("pow(" + (int) num + ")");
                         label.setText(String.valueOf((int)result));
                     } else {
-                        info.setText(num + "의 제곱 ㅋㅋ");
+                        info.setText("pow(" + num + ")");
                         label.setText(String.valueOf(result));
                     }
                 } else if (result % 1.0D == 0.0D) {
-                    info.setText((int)result + "의 제곱 ㅋㅋ");
+                    info.setText("pow(" + (int) result + ")");
                     result = (double)Math.round(Math.pow(result, 2.0D) * 1.0E9D) / 1.0E9D;
                     label.setText(String.valueOf((int)result));
                 } else {
-                    info.setText(result + "의 제곱 ㅋㅋ");
+                    info.setText("pow(" + result + ")");
                     result = (double)Math.round(Math.pow(result, 2.0D) * 1.0E9D) / 1.0E9D;
                     label.setText(String.valueOf(result));
                 }
@@ -143,18 +143,18 @@ public class CalculatorClass extends JFrame {
                 if (info.getText() == "") {
                     result = (double)Math.round(Math.sqrt(num) * 1.0E9D) / 1.0E9D;
                     if (result % 1.0D == 0.0D) {
-                        info.setText((int)num + "의 제곱근 ㅋㅋ");
+                        info.setText("sqrt(" + (int) num + ")");
                         label.setText(String.valueOf((int)result));
                     } else {
-                        info.setText(num + "의 제곱근 ㅋㅋ");
+                        info.setText("sqrt(" + num + ")");
                         label.setText(String.valueOf(result));
                     }
                 } else if (Math.sqrt(result) % 1.0D == 0.0D) {
-                    info.setText((int)result + "의 제곱근 ㅋㅋ");
+                    info.setText("sqrt(" + (int) result + ")");
                     result = (double)Math.round(Math.sqrt(result) * 1.0E9D) / 1.0E9D;
                     label.setText(String.valueOf((int)result));
                 } else {
-                    info.setText(result + "의 제곱근 ㅋㅋ");
+                    info.setText("sqrt(" + result + ")");
                     result = (double)Math.round(Math.sqrt(result) * 1.0E9D) / 1.0E9D;
                     label.setText(String.valueOf(result));
                 }
